@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML lesson</title>
+
+    <style>
+        body {
+            background: #f9fbfd;
+            padding: 50px 100px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            background: #e2d9d9;
+        }
+
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        form {
+            padding-top: 40px;
+        }
+
+
+        input[type="text"] {
+            margin-bottom: 20px;
+            display: block;
+        }
+
+
+        .sex-question {
+            margin-bottom: 20px;
+        }
+
+        .msg {
+            margin-bottom: 20px;
+        }
+
+        .sity-dropdown {
+            margin-bottom: 60px;
+        }
+
+        .lang-checkbox {
+            margin-bottom: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>Home task # 3 </h1>
+    <table>
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Телефон</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Михаил</td>
+            <td>Сидоров</td>
+            <td>21-3-145</td>
+            <td>1235@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Иван</td>
+            <td>Иванюк</td>
+            <td>58-3-874</td>
+            <td>1235@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Ольга</td>
+            <td>Машина</td>
+            <td>45-6-789</td>
+            <td>1235@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Света</td>
+            <td>Игнатьева</td>
+            <td>45-6-789</td>
+            <td>1235@gmail.com</td>
+        </tr>
+    </table>
+
+    <form>
+
+        <input type="text" placeholder="Введите Ваше Имя">
+
+        <input type="text" placeholder="Введите Вашу фамилию">
+
+        <div class="sex-question">
+            <p>Какой Ваш пол?</p>
+            <input type="radio" id="sexMale" name="sex" value="male" checked>
+            <label for="sexMale">М</label>
+            <input type="radio" id="sexFemale" name="sex" value="female">
+            <label for="sexFemale">Ж</label>
+        </div>
+
+        <div class="msg">
+            <textarea rows="6" cols="25" name="comment" placeholder="Напишите свой вопрос"></textarea>
+        </div>
+
+        <select class="sity-dropdown">
+            <option value="chooseSity" selected disabled>Выберете город</option>
+            <option value="Odessa">Одесса</option>
+            <option value="Lviv">Львов</option>
+            <option value="Xarcov">Харьков</option>
+        </select>
+
+        <div class="lang-checkbox">
+            <p>Выбор языка:</p>
+            <div>
+                <input type="checkbox" id="ukraine" name="ukraine" checked>
+                <label for="ukraine">Українська</label>
+            </div>
+            <div>
+                <input type="checkbox" id="russian" name="russian">
+                <label for="russian">Русский</label>
+
+            </div>
+            <div>
+                <input type="checkbox" id="english" name="english">
+                <label for="english">English</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Отправить">
+
+    </form>
+
+</body>
+
+</html>
